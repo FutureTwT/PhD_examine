@@ -20,7 +20,7 @@ int QueueEmpty(Queue Q) {
 }
 
 int EnQueue(Queue *Q, int x) {
-    if (Q->rear == MAX_SIZE) {
+    if (Q->rear == MAX_SIZE) { // 假溢出，参考循环队列实现
         return 0;
     }
     Q->data[(Q->rear)++] = x;
