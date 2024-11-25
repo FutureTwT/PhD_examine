@@ -18,12 +18,12 @@ int StackEmpty(Stack S) {
     return S.top == -1;
 }
 
-int Push(Stack *S, char x) {
+bool Push(Stack *S, char x) {
     if (S->top == MAX_SIZE - 1) {
         return 0;
     }
     S->data[++(S->top)] = x; // 前置递增，首先将 S->top 的值增加 1，然后返回增加后的值
-    return 1;
+    return true;
 }
 
 char Pop(Stack *S) {
