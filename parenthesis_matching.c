@@ -26,7 +26,7 @@ int Push(Stack *S, char x) {
     return 1;
 }
 
-int Pop(Stack *S) {
+char Pop(Stack *S) {
     char temp;
     if (S->top == -1) {
         return 0;
