@@ -6,6 +6,7 @@ void sort(int* arr, int arr_size) {
     for (int gap = arr_size/2; gap > 0; gap /= 2) {
         // for each sub-array
         for (int head = 0; head < gap; head ++) {
+            // perform direct insert sort
             for (int i = head+gap; i < arr_size; i += gap) {
                 int key = arr[i];
                 int j = i - gap;
