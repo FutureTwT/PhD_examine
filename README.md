@@ -18,9 +18,7 @@
     inorder_traversal.c 递归+非递归实现中序遍历
     postorder_traversal.c 递归+非递归实现中序遍历  
     levelorder_traversal.c 队列实现层次遍历
-    先序+中序构建二叉树
-    先序+后序构建二叉树
-    先序+层次构建二叉树
+    order_build.c 先序+中序/先序+后序构建二叉树
     构建中序线索二叉树
     遍历中序线索二叉树
     二叉排序树
