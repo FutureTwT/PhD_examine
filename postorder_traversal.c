@@ -41,7 +41,7 @@ void postorder_stack(Node* root) {
             curr = curr->left;
         }
 
-        curr = stack[top]; // 不可以top--，curr作为栈顶，左子树必然已经访问完，但是右子树还没有访问
+        curr = stack[top]; // 不可以top--，curr作为栈顶，左子树必然已经访问完，但是需要先检查右子树是否已经访问
         if (curr->right == NULL || curr->right == lastVisited) { // 没有右子树或者已经访问过右子树
             printf("%d ", curr->data); // 直接访问根节点
             top--; // 出栈
