@@ -30,14 +30,14 @@ void preorder_stack(Node* root) {
 
     Node* stack[100];
     int top = -1;
-    stack[++top] = root;
+    stack[++top] = root; // 先序遍历的起始点
     
     // 1. 访问根节点，2. 先存右子树，再存左子树 3. 下一轮直接访问左子树
     while (top >= 0) { // 栈空后停止遍历
         Node* temp_node = stack[top--];
         printf("%d ", temp_node->data);
 
-        if (temp_node->right) { // 把后遍历的右节点先放到栈底
+        if (temp_node->right) { // 先序遍历要求在访问当前节点后，优先遍历左子树，但右子树不能丢失，右子树先压栈，让它在栈的更深位置被后续访问
             stack[++top] = temp_node->right;
         }
         if (temp_node->left) {
