@@ -10,7 +10,7 @@ void getNext(const char* pattern, int* next) {
     int j = 0;
     int k = -1;
     while (j < len - 1) {// 最后一个j不用取，因此是判断j-1的位置和k的位置
-        if (k == -1 || pattern[k] == pattern[j]) {
+        if (k == -1 || pattern[k] == pattern[j]) { // 已经计算出了j的next值，根据j能够对上的最大前缀长度k，使得j+1next数组为k+1
             next[++j] = k++;
         } else {
             k = next[k]; // 回溯k指针
