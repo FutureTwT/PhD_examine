@@ -19,17 +19,16 @@
     postorder_traversal.c 递归+非递归实现中序遍历  
     levelorder_traversal.c 队列实现层次遍历
     order_build.c 先序+中序/先序+后序构建二叉树
-    构建中序线索二叉树
-    遍历中序线索二叉树
-    二叉排序树
-    并查集
+    threaded_binary_tree.c 构建+遍历中序线索二叉树
+    binary_search_tree.c 二叉排序树
+    (参考kruskal.cpp) 并查集
 
 图算法：
 
-    广度优先搜索
-    深度优先搜索
-    最小生成树-Prim算法
-    最小生成树-Kruskal算法
+    bfs.cpp 广度优先搜索
+    dfs.cpp 深度优先搜索
+    prim.cpp 最小生成树-Prim算法
+    kruskal.cpp 最小生成树-Kruskal算法
     最短路径-Dijkstra算法
     最短路径-Floyd算法
 
